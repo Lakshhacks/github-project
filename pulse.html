@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+
+        }
+        .box{
+            height: 500px;
+            width: 500px;
+            border-radius: 2rem;
+       
+            background-image: url("https://cdn.pixabay.com/animation/2023/06/15/22/01/22-01-40-489_256.gif");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-top: 100px;
+            animation: pulse 01s ease-in-out ;
+        }
+        @keyframes pulse {
+            0%{
+                transform: translateX(500%);
+            }
+            50%{
+                transform: translateX(500%);
+            }
+            100%{
+                transform: translateX(0%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+</body>
+</html>
